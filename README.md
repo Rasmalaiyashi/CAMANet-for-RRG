@@ -53,17 +53,8 @@ Fuzzy logic extends classical binary logic by allowing partial truth values betw
 
 - **Fuzzification**:
   Convert raw attention scores ($A$) into fuzzy sets using membership functions. For instance:
-  \[
-  \mu_{\text{low}}(x) = 
-  \begin{cases} 
-  1 & \text{if } x \leq a \\
-  \frac{b - x}{b - a} & \text{if } a < x < b \\
-  0 & \text{if } x \geq b 
-  \end{cases}
-  \]
-  \[
-  \mu_{\text{high}}(x) = 1 - \mu_{\text{low}}(x)
-  \]
+  ![image](https://github.com/user-attachments/assets/3b8232f9-5e56-403c-a963-196e060575e8)
+
   Each visual-textual pair is assigned membership values in categories such as low alignment, medium alignment, and high alignment.
 
 - **Fuzzy Rules**:
